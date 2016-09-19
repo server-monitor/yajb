@@ -151,7 +151,7 @@ The initial setup is based off of ["Build Your Own Starter"](http://andrewhfarme
 
 #### G. Redux and friends
 
-  `npm install --save redux redux-react redux-thunk`
+  `npm install --save redux react-redux redux-thunk`
 
 
 #### H. New (TODO)
