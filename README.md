@@ -79,7 +79,7 @@ The initial setup is based off of ["Build Your Own Starter"](http://andrewhfarme
 
   3. Create a [JSDOM configuration file](spec/jsdom.js)
 
-  4. Update `"scripts"["test"]` value in package.json to `"mocha --recursive ./spec/jsdom.js ./spec""`
+  4. Update `"scripts"["test"]` value in package.json to `"mocha --recursive ./spec/jsdom.js ./spec"`
 
     *Optional*: configure test to run a process that will watch the test directory for any changes, then run the tests when changes occur.
 
@@ -153,6 +153,19 @@ The initial setup is based off of ["Build Your Own Starter"](http://andrewhfarme
 
   `npm install --save redux redux-react redux-thunk`
 
+
+#### H. New (TODO)
+
+https://semaphoreci.com/community/tutorials/testing-react-components-with-enzyme-and-mocha
+https://github.com/webpack/webpack/issues/1151
+
+"test": "clear && find spec/ -type f -name '*.spec.js' | xargs mocha --watch spec/helpers/jsdom.js"
+
+  "scripts": {
+    "start": "webpack-dev-server",
+    "test": "clear && find spec/ -type f -name '*.spec.js' | xargs mocha --watch --growl spec/helpers/jsdom.js",
+    "dev:hot": "webpack-dev-server --hot --inline --progress --colors --watch --display-error-details --display-cached --content-base ./"
+  },
 
 ---
 
